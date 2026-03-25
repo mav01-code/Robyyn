@@ -4,10 +4,10 @@
   position: sticky;
   top: 2px;
   z-index: 1000;
-  width: calc(100% - 110px);
+  width: calc(100% - 80px);
   height: 100px;
   margin: 2px auto 0;
-  padding: 0 40px;
+  padding: 0 26px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,15 +27,44 @@
   font-family: "PP Editorial New", serif;
   font-weight: 800;
   font-style: italic;
-  font-size: 38.16px;
+  font-size: 34px;
   line-height: 91.87px;
   letter-spacing: 1.19px;
   color: #ffffff;
 }
+
+.header-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-link {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.header-link.active {
+  background: rgba(195, 155, 255, 0.22);
+  color: #fff;
+}
+
 .header-cta {
   position: relative;
-  height: 68px;
-  width: 216px;
+  height: 56px;
+  width: 190px;
   border-radius: 16px;
   border: none;
   display: flex;
@@ -43,7 +72,7 @@
   justify-content: center;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 100%;
   color: #ffffff;
   background: linear-gradient(135deg,#6f63ff 0%,#9b8cff 100%);
